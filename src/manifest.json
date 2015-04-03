@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Command Creator",
+  "description": "Create a run command from open tabs' urls, and copy it to your clipboard!",
+  "version": "1.0",
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_title": "Create & Copy Run Command",
+    "default_icon": "icon.png"
+  },
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "options_page": "options.html",
+  
+  "permissions": [
+    "tabs",
+	"storage",
+	"clipboardWrite",
+	"http://*/*",
+    "https://*/*"
+  ]
+}
